@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<config>  
+<modules>  
+  <Exceed_CategoryCart>  
+    <version>0.0.1</version>  
+  </Exceed_CategoryCart>  
+</modules>  
+<frontend>  
+  <routers>  
+    <!-- This is the frontname to override  
+    EG: http://mydomainname.com/customer/  -->  
+    <checkout>  
+      <args>  
+        <modules>  
+          <!-- Use the module Spinonesolutions_Customer BEFORE Mage_Customer -->  
+          <Exceed_CategoryCart before="Mage_Checkout">Exceed_CategoryCart</Exceed_CategoryCart>  
+        </modules>  
+      </args>  
+    </checkout>  
+  </routers>  
+</frontend>  
+</config>  

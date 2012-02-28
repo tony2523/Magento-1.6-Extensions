@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>    
+    <modules>
+        <Magentotutorial_Weblog>
+            <version>0.1.0</version>
+        </Magentotutorial_Weblog>
+    </modules>
+    <frontend>
+    <routers>
+        <weblog>
+            <use>standard</use>
+            <args>
+                <module>Magentotutorial_Weblog</module>
+                <frontName>weblog</frontName>
+            </args>
+        </weblog>
+    </routers>
+</frontend>
+ <global>
+        <!-- ... -->
+        <models>
+            <weblog>
+                <class>Magentotutorial_Weblog_Model</class>
+                <!-- 
+                need to create our own resource, cant just
+                use core_mysql4
+                -->
+                <resourceModel>weblog_mysql4</resourceModel>
+            </weblog> 
+            <weblog_mysql4>
+            <class>Magentotutorial_Weblog_Model_Mysql4</class>   
+             <entities>
+                <blogpost>
+                    <table>blog_posts</table>
+                </blogpost>
+            </entities>           </weblog_mysql4>  
+        </models>
+        <!-- ... -->
+         <resources>
+        <weblog_write>
+            <connection>
+                <use>core_write</use>
+            </connection>
+        </weblog_write>
+        <weblog_read>
+            <connection>
+                <use>core_read</use>
+            </connection>
+        </weblog_read>      
+    </resources>      
+    </global>
+</config>

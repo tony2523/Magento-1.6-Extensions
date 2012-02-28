@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <helloworld_index_index>
+        <reference name="root">
+            <block type="page/html" name="root" output="toHtml" template="simple_page.phtml" >
+            	<block type="page/template_links" name="top.links"/>
+            	  <block type="customer/form_register" name="customer_form_register" template="customer/form/register.phtml"/>
+            </block>
+        </reference>
+    </helloworld_index_index>
+     <helloworld_index_goodbye>
+  <update handle="helloworld_index_index" />
+    </helloworld_index_goodbye>
+</layout>

@@ -1,0 +1,5 @@
+V2.4.1    - Community release version
+
+v2.4.2	- Resolved minor issue with Highrise export
+
+v2.5 	- altered export to use Shipping Description when available

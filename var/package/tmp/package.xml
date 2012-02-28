@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+    <name>Webshopapps_Orderexport</name>
+    <version>2.7.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php)">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Export full order details in multiple formats. These include standard csv file and preformated for Sage. Inbuilt connectivity with Highrise to update your contacts directly from the order screen. Very easy to install and configure. </summary>
+    <description>Order Export includes:&#xD;
+&#xD;
+-export of full order details including customer details, payment, tax, shipping method&#xD;
+- standard csv format also includes item details and custom options with one line item per row&#xD;
+-Sage export is pre-formatted for upload to Sage accounting systems&#xD;
+-Highrise export will connect with your Highrise CRM account and update your customer details, order history and background information. &#xD;
+</description>
+    <notes>Latest version including format changes for street address and multiple currencies</notes>
+    <authors><author><name>Karen Baker</name><user>birches</user><email>sales@webshopapps.com</email></author></authors>
+    <date>2012-02-21</date>
+    <time>03:45:46</time>
+    <contents><target name="magecommunity"><dir name="Webshopapps"><dir name="Ordermanager"><dir name="Block"><dir name="Sales"><dir name="Order"><file name="Grid.php" hash="f31b71e482df840c5ab254bed6e20442"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="6c9683fe9f996319dacfcaa86585d40b"/></dir><dir name="Model"><dir name="Export"><file name="Abstractcsv.php" hash="782b085400fd224426ab44b459a40adc"/><file name="Csv.php" hash="c78622f355008fc52adf93bce4d9078f"/><file name="Highrise.php" hash="b14ac44fd9473419f888f075023bf0ab"/><file name="Sage.php" hash="1c7fc2b3a1c27c032fcb653b20f13428"/><file name="Status.php" hash="010c24016b97b973a6337f7c5dc7437b"/></dir><dir name="Options"><file name="Options.php" hash="8dd8c73b115b640ee9cafc09401b4a4e"/></dir></dir><dir name="controllers"><dir name="Sales"><dir name="Order"><file name="ExportController.php" hash="3dde0d8aa38bae49ea46f910a6358b82"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="10eaeda3b1e21903212018a24d220513"/><file name="system.xml" hash="b31a85e5b4d062f7efd2b4356df9fabd"/></dir></dir><file name="changelog.txt" hash="8ed18c19d113d9c9939b84b48240881e"/></dir></target><target name="mageetc"><dir name="modules"><file name="Webshopapps_Ordermanager.xml" hash="6db08010fa935c782562ef3943898ff2"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
